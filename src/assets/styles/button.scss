@@ -1,0 +1,45 @@
+@import './colors';
+@import './fonts';
+
+.chit-btn {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: $font-regular;
+  letter-spacing: -0.35px;
+  transition: all 0.2s ease;
+
+  &__primary {
+    background-color: $charcoal-grey;
+    color: #fff;
+    &:disabled {
+      background-color: $light-grey;
+      cursor: default;
+    }
+  }
+  &__ghost {
+    background-color: transparent;
+    border: 1px solid $slate-grey;
+    color: $slate-grey;
+    &:disabled {
+      border: 1px solid $medium-grey;
+      color: $medium-grey;
+      cursor: default;
+    }
+  }
+  &.loading {
+    pointer-events: none;
+    opacity: 0.9;
+  }
+  &:hover {
+    transform: scale(1.025);
+  }
+  &:disabled {
+    &:hover {
+      transform: none;
+    }
+  }
+}
