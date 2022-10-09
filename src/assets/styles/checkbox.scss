@@ -1,0 +1,68 @@
+@import './colors';
+@import './fonts';
+
+.chit-checkbox {
+    display: inline-flex;
+    align-items: center;
+    
+    input[type="checkbox"] {
+        position: relative;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid $dark-grey;
+        margin: 0;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:checked {
+            background-color: $kohler-blue;
+            border: none;
+
+            &+label {
+                color: $kohler-blue;
+            }
+
+            &:disabled {
+                background-color: $light-grey;
+                border: none;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 15px;
+                height: 5px;
+                border-left: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                transform: scale(0.8) translateY(-100%) translateX(-60%) rotate(-45deg);
+                box-sizing: border-box;
+            }
+        }
+
+        &:disabled {
+            border: 1px solid $light-grey;
+
+            &+label {
+                color: $light-grey;
+            }
+        }
+    }
+
+    label {
+        font-size: 16px;
+        line-height: 18px;
+        font-family: $font-regular;
+        color: $dark-grey;
+        padding-left: 10px;
+        letter-spacing: -0.55px;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.3s ease;
+    }
+}

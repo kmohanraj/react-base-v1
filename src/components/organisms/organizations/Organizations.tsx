@@ -1,6 +1,19 @@
 import Input from "components/atoms/TextField";
 import SearchIcon from '../../../assets/images/search.svg';
+import CheckboxSet from "components/molecules/CheckboxSet";
 import { FC } from "react";
+
+const Genders = [
+  {
+    id: 'male',
+    label: 'Male'
+  },
+  {
+    id: 'female',
+    label: 'Female'
+  }
+]
+
 
 const Organizations: FC = () => {
   return (
@@ -15,6 +28,8 @@ const Organizations: FC = () => {
           required
           preFixIcon={SearchIcon}
           message='Eg: Example'  />
+          {/* <CheckboxSet title="Gender" options={Genders} isUl/> */}
+          <CheckboxSet title="Gender 2" options={Genders}/>
       </div>
     </>
   )

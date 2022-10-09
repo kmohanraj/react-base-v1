@@ -2,6 +2,7 @@ import { FC } from "react";
 import cx from 'classnames';
 import '../../assets/styles/button.scss';
 import Loader from "./EllipsisLoader";
+import CONSTANTS from "constants/constants";
 
 export interface ButtonProps {
   label: string,
@@ -11,10 +12,12 @@ export interface ButtonProps {
   loading?: boolean
 }
 
+const { BRAND_CLASS } = CONSTANTS.CLASS_NAMES
+
 const Button: FC<ButtonProps> = ({ label, disabled, type, onClick, loading}) => {
   const btnCls = cx (
-    'chit-btn',
-    `chit-btn__${type}`,
+    `${BRAND_CLASS}-btn`,
+    `${BRAND_CLASS}-btn__${type}`,
     { 'loading': loading}
   )
   return (
