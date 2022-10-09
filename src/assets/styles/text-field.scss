@@ -1,0 +1,97 @@
+@import './colors';
+@import './fonts';
+
+.chit-text-field {
+    display: inline-block;
+    width: 100%;
+
+    &__input-wrapper {
+        position: relative;
+        display: inline-block;
+        letter-spacing: -0.7px;
+        width: inherit;
+
+        input {
+            width: inherit;
+            height: 60px;
+            border: 1px solid $dark-grey;
+            border-radius: 4px;
+            font-size: 18px;
+            color: $slate-grey;
+            font-family: $font-regular;
+            text-indent: 15px;
+            padding: 0;
+            padding-top: 15px;
+            box-sizing: border-box;
+
+            &.has-prefix {
+                text-indent: 50px;
+            }
+
+
+            &:focus {
+                &+label {
+                    top: 5px;
+                    transform: none;
+                    font-size: 12px;
+                    letter-spacing: -0.35px;
+                }
+            }
+
+            &.error {
+                border-color: $danger;
+            }
+        }
+
+        label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: $font-regular;
+            color: $dark-grey;
+            font-size: 18px;
+            transition: all 0.2s ease-out;
+            cursor: inherit;
+            letter-spacing: -0.7px;
+
+            &.has-value {
+                top: 5px;
+                transform: none;
+                letter-spacing: -0.35px;
+                transform: scale(0.66);
+            }
+
+            &.has-prefix {
+                left: 50px;
+            }
+
+            &.error {
+                color: $danger;
+            }
+        }
+    }
+
+    & .message {
+        font-size: 14px;
+        color: $dark-grey;
+        font-family: $font-regular;
+        display: block;
+        margin-top: 5px;
+        letter-spacing: -.65px;
+
+        &.error {
+            color: $danger;
+        }
+    }
+
+    & .prefix-icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+}
