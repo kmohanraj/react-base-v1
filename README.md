@@ -7,5 +7,5 @@ yarn create react-app react-base-v1 --template typescript
 ```
 #### Packages used 
 ```
-yarn add classnames sass
+yarn add classnames sass react-router-dom
 ```

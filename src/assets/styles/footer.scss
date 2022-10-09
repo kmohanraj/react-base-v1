@@ -1,0 +1,16 @@
+@use 'colors';
+
+footer {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: colors.$light-grey;
+  .footer-content {
+    padding: 14px 40px;
+    p {
+      font-size: 0.6rem;
+    }
+  }
+}
