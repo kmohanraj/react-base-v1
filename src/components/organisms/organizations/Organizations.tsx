@@ -5,5 +5,4 @@ const Organizations: FC = () => {
     <h2>Organizations</h2>
   )
 }
-
 export default Organizations;

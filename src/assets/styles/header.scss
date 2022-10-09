@@ -88,7 +88,7 @@
 }
 
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .header {
     li {
       float: left;
@@ -104,5 +104,8 @@
     .menu-icon {
       display: none;
     }
+  }
+  .footer-content {
+    padding: 6px 10px;
   }
 }
