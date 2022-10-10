@@ -7,7 +7,12 @@ export interface LoaderProps {
 
 const EllipsisLoader: FC<LoaderProps> = ({ color }) => {
   return (
-    <div className={ `lds-ellipsis ${color && color}`}><div></div><div></div><div></div><div></div></div>
+    <div className={`lds-ellipsis ${color && color}`}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   )
 }
 export default EllipsisLoader;
