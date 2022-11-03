@@ -1,15 +1,15 @@
-import Input from "components/atoms/TextField";
-import SearchIcon from '../../../assets/images/search.svg';
-import CheckboxSet from "components/molecules/CheckboxSet";
 import { FC } from "react";
+import Input from "components/atoms/TextField";
+import CheckboxSet from "components/molecules/CheckboxSet";
+import 'assets/styles/organizations.scss';
 
 const Genders = [
   {
-    id: 'male',
+    id: 'status',
     label: 'Male'
   },
   {
-    id: 'female',
+    id: 'status1',
     label: 'Female'
   }
 ]
@@ -17,21 +17,59 @@ const Genders = [
 
 const Organizations: FC = () => {
   return (
-    <>
+    <div>
       <h2>Add Organization</h2>
-      <div>
+      <div className="org-form">
         <Input 
-          inputId="name" 
+          inputId="org_name" 
           value='' 
           onChange={() => {}}
-          placeholder="Enter Name"
+          placeholder="Enter Organization Name"
           required
-          preFixIcon={SearchIcon}
-          message='Eg: Example'  />
-          {/* <CheckboxSet title="Gender" options={Genders} isUl/> */}
-          <CheckboxSet title="Gender 2" options={Genders}/>
+        />
+
+        <Input
+          inputId="org_email"
+          value=''
+          onChange={() => {}}
+          placeholder="Enter Organization Mail"
+          required
+        />
+
+        <Input
+          inputId="branch_limit"
+          value=""
+          onChange={() => {}}
+          placeholder="Enter Branch Limit"
+          required
+        />
+
+        <Input
+          inputId="org_logo"
+          value=""
+          onChange={() => {}}
+          placeholder="Upload Organization Logo"
+          required
+        />
+
+        <Input
+          inputId="phone"
+          value=""
+          onChange={() => {}}
+          placeholder='Enter Phone'
+          required
+        />
+
+        <Input
+          inputId="address"
+          value=""
+          onChange={() => {}}
+          placeholder="Enter Organization Address"
+          required
+        />
+        <CheckboxSet title="Gender 2" options={Genders}/>
       </div>
-    </>
+    </div>
   )
 }
 export default Organizations;

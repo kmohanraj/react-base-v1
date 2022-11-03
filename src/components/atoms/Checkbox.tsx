@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import CONSTANTS from "constants/constants";
-import '../../assets/styles/checkbox.scss';
+import 'assets/styles/checkbox.scss';
 
 export interface CheckboxProps {
   inputId: string,
@@ -27,7 +27,7 @@ const Checkbox: FC<CheckboxProps> = ({inputId, value, defaultChecked, label, onC
 
   return (
     <div className={`${BRAND_CLASS}-checkbox`}>
-      <input id={inputId} type="checkbox" checked={checked} value={value} onChange={handleOnChange} disabled={disabled} />
+      <input id={inputId} type="radio" checked={checked} value={value} onChange={handleOnChange} disabled={disabled} />
       <label htmlFor={inputId}>{label}</label>
     </div>
   )

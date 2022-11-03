@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import cx from 'classnames';
-import '../../assets/styles/text-field.scss';
+import 'assets/styles/text-field.scss';
 import CONSTANTS from "constants/constants";
 export interface TextFieldProps {
   value: string,

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import '../../assets/styles/ellipsis-loader.scss';
+import 'assets/styles/ellipsis-loader.scss';
 
 export interface LoaderProps {
   color?: string

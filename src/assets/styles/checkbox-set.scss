@@ -1,38 +1,38 @@
-@use 'colors';
-@use 'fonts';
+@use "colors";
+@use "fonts";
 
 .chit-checkbox-set.vertical .chit-checkbox {
   padding-right: 3rem;
 }
 .chit-checkbox-set {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    .title {
-        font-size: 16px;
-        color: colors.$charcoal-grey;
-        font-weight: normal;
-        font-family: fonts.$font-regular;
-        margin: 0;
-        margin-bottom: 10px;
-        letter-spacing: -0.35px;
+  .title {
+    font-size: 16px;
+    color: colors.$charcoal-grey;
+    font-weight: normal;
+    font-family: fonts.$font-regular;
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: -0.35px;
+  }
+
+  p {
+    font-size: 14px;
+    color: colors.$dark-grey;
+    letter-spacing: -0.45px;
+    line-height: 22px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-
-    p {
-        font-size: 14px;
-        color: colors.$dark-grey;
-        letter-spacing: -0.45px;
-        line-height: 22px;
-        margin-top: -5px;
-        margin-bottom: 20px;
-    }
-
-    ul {
-        li {
-            margin-bottom: 15px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
+  }
 }

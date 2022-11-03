@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { IErrorProps } from "../../interfaces/components.interface";
-import '../../assets/styles/error-page.scss';
+import { IErrorProps } from "types/components.types";
+import 'assets/styles/error-page.scss';
 
 const ErrorPage: FC<IErrorProps> = ({title, message}) => {
   return (

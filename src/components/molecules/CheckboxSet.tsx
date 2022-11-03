@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Checkbox from "components/atoms/Checkbox";
-import '../../assets/styles/checkbox-set.scss';
+import 'assets/styles/checkbox-set.scss';
 import CONSTANTS from "constants/constants";
 
 export interface CheckboxSetProps {

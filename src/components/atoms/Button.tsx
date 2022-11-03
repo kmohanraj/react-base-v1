@@ -1,6 +1,6 @@
 import { FC } from "react";
 import cx from 'classnames';
-import '../../assets/styles/button.scss';
+import 'assets/styles/button.scss';
 import Loader from "./EllipsisLoader";
 import CONSTANTS from "constants/constants";
 
