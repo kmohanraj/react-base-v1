@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../../assets/styles/header.scss';
+import 'assets/styles/header.scss';
 
 export interface IMenusProps {
   path: string,

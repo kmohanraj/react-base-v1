@@ -1,11 +1,11 @@
 import { Suspense } from "react";
-import Branches from "../components/organisms/branches/Branches";
-import Customers from "../components/organisms/customers/Customers";
-import DashboardPage from "../components/organisms/dashborad/DashboardPage";
-import Groups from "../components/organisms/groups/Groups";
-import Organizations from "../components/organisms/organizations/Organizations";
-import Users from "../components/organisms/users/Users";
-import { IRouteConfig } from "../interfaces/routes.interface";
+import Branches from "components/organisms/branches/Branches";
+import Customers from "components/organisms/customers/Customers";
+import DashboardPage from "components/organisms/dashborad/DashboardPage";
+import Groups from "components/organisms/groups/Groups";
+import Organizations from "components/organisms/organizations/Organizations";
+import Users from "components/organisms/users/Users";
+import { IRouteConfig } from "types/routes.types";
 import AppRoutes from "./AppRoutes";
 
 const Routes = () => {
